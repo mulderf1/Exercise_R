@@ -222,7 +222,7 @@ plot_ebola_point_v5 <- ggplot(data = data_ebola_cum_cases,
   scale_y_continuous(breaks = seq(from = 0, to = 10000, by = 2500),
                      limits = c(0, 10000)) +
   ggtitle(label = "Confirmed Ebola cases") +
-  xlab(label = "Time") +
+  xlab(label = "Time.") +
   ylab(label = "Cum. # of confirmed cases") +
   theme_bw() + theme(legend.position="bottom") +
   facet_grid(cols = vars(country))
