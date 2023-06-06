@@ -1,0 +1,51 @@
+---
+title: "Second wave of COVID-19 in Switzerland"
+author: "Fanny Mulder"
+date: "`r date()`"
+format: 
+  html:
+      toc: true
+      code-fold: show
+      code-tools: true
+      df-print: paged
+      embed-resources: true
+---
+
+```{r}
+#| output: false
+# load libraries
+library(here)
+library(tidyverse)
+library(lubridate)
+```
+
+```{r}
+{r}
+#| output: false
+# Reading my data
+cases <- read_csv("ebola.csv")
+print(cases)
+
+{r}
+#process data
+```
+
+
+
+## Introduction
+
+Here you can provide some introductory information. 
+
+## Data
+
+Load data from somewhere. And then perform some cleaning.
+
+
+## Results
+
+{r}
+#| label: fig-cases
+#| fig-cap: "Laboratory confirmed cases"
+#| fig-width: 8
+#| fig-height: 4
+ggplot(cases)
